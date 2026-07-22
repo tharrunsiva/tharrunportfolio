@@ -331,7 +331,7 @@ const App = () => {
         <div className="container py-5">
           <div className="text-center mb-5 reveal">
             <h2 className="text-neon-blue mb-2">Featured Projects</h2>
-            <div className="code-font text-muted">git checkout -b portfolio</div>
+            <div className="code-font text-white">git checkout -b portfolio</div>
           </div>
 
           <div className="row g-4">
@@ -430,7 +430,7 @@ revenue, and KPIs for data-driven decision-making.</p>
         <div className="container py-5">
           <div className="text-center mb-5 reveal">
             <h2 className="text-neon-purple mb-2">Education & Experience</h2>
-            <div className="code-font text-muted">SELECT * FROM timeline ORDER BY date DESC</div>
+            <div className="code-font text-white">SELECT * FROM timeline ORDER BY date DESC</div>
           </div>
 
           <div className="row justify-content-center">
@@ -483,7 +483,7 @@ revenue, and KPIs for data-driven decision-making.</p>
         <div className="container py-5">
           <div className="text-center mb-5 reveal">
             <h2 className="text-neon-green mb-2">Initialize Connection</h2>
-            <div className="code-font text-muted">System.out.println("Let's talk!");</div>
+            <div className="code-font text-white">System.out.println("Let's talk!");</div>
           </div>
 
           <div className="row g-5 justify-content-center">
@@ -577,7 +577,7 @@ revenue, and KPIs for data-driven decision-making.</p>
             <a href="https://www.instagram.com/tharrun._.07_/?hl=en" className="social-icon"><i className="bi bi-instagram"></i></a>
           </div>
           
-          <p className="text-muted small m-0 fw-semibold">© 2026, Crafted by Tharrun S.</p>
+          <p className="text-white small m-0 fw-semibold">© 2026, Crafted by Tharrun S.</p>
         </div>
       </footer>
     </div>
