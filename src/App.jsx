@@ -6,11 +6,14 @@ import img from './assets/Edited Putrajaya.jpg';
 // IMPORT YOUR RESUME HERE
 import resumePdf from './assets/Tharrun_resume__.pdf'; 
 import img1 from './assets/chatbot.png';
-import img2 from './assets/campustime.png'
-import img3 from './assets/smartwaste.png'
-import img4 from './assets/airline.png'
-import img5 from './assets/docking.png'
-import img6 from './assets/venture.png'
+import img2 from './assets/campustime.png';
+import img3 from './assets/smartwaste.png';
+import img4 from './assets/airline.png';
+import img5 from './assets/docking.png';
+import img6 from './assets/venture.png';
+import img7 from './assets/crm.png';
+import img8 from './assets/revivo.png';
+import img9 from './assets/voting.png';
 
 const App = () => {
   const typedTextRef = useRef(null);
@@ -335,13 +338,55 @@ const App = () => {
           </div>
 
           <div className="row g-4">
+            
+            <div className="col-md-6 col-lg-4 reveal">
+              <div className="glass-card h-100 d-flex flex-column overflow-hidden">
+                <img src={img7} alt="MERN Dashboard" className="img-fluid border-bottom border-secondary" style={{ height: '200px', objectFit: 'cover' }} />
+                <div className="p-4 d-flex flex-column flex-grow-1">
+                  <h5 className="text-white fw-bold">Vinsup Skill Academy - CRM</h5>
+                  <p className="text-highlight small mb-4 lh-base">Developed a full-stack CRM using React, Node.js, and MongoDB to automate employee workflows, including ID card and payslip generation.</p>
+                  <div className="mt-auto d-flex gap-2">
+                    <a href="#" className="btn btn-sm btn-neon"><i className="bi bi-github"></i> GitHub</a>
+                    <a href="https://crm-frontend-tawny-five.vercel.app" className="btn btn-sm btn-neon btn-neon-purple"><i className="bi bi-box-arrow-up-right"></i> Live</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-6 col-lg-4 reveal" style={{ transitionDelay: '0.1s' }}>
+              <div className="glass-card h-100 d-flex flex-column overflow-hidden">
+                <img src={img8} alt="Data Mining Algo" className="img-fluid border-bottom border-secondary" style={{ height: '200px', objectFit: 'cover' }} />
+                <div className="p-4 d-flex flex-column flex-grow-1">
+                  <h5 className="text-white fw-bold">Revivo</h5>
+                  <p className="text-highlight small mb-4 lh-base">Built an AI-powered platform using React, Node.js, and MongoDB for donating and leasing items, featuring smart categorization and real-time chat.</p>
+                  <div className="mt-auto d-flex gap-2">
+                    <a href="#" className="btn btn-sm btn-neon"><i className="bi bi-github"></i> GitHub</a>
+                    <a href="#" className="btn btn-sm btn-neon btn-neon-purple"><i className="bi bi-box-arrow-up-right"></i> Live</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-6 col-lg-4 reveal" style={{ transitionDelay: '0.2s' }}>
+              <div className="glass-card h-100 d-flex flex-column overflow-hidden">
+                <img src={img9} alt="Graphic Design UI" className="img-fluid border-bottom border-secondary" style={{ height: '200px', objectFit: 'cover' }} />
+                <div className="p-4 d-flex flex-column flex-grow-1">
+                  <h5 className="text-white fw-bold">Smart Voting Portal</h5>
+                  <p className="text-highlight small mb-4 lh-base">Developed a secure digital voting platform using Django, featuring robust voter authentication and real-time result tracking.</p>
+                  <div className="mt-auto d-flex gap-2">
+                    <a href="#" className="btn btn-sm btn-neon"><i className="bi bi-github"></i> GitHub</a>
+                    <a href="#" className="btn btn-sm btn-neon btn-neon-purple"><i className="bi bi-box-arrow-up-right"></i> Live</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="col-md-6 col-lg-4 reveal">
               <div className="glass-card h-100 d-flex flex-column overflow-hidden">
                 <img src={img1} alt="MERN Dashboard" className="img-fluid border-bottom border-secondary" style={{ height: '200px', objectFit: 'cover' }} />
                 <div className="p-4 d-flex flex-column flex-grow-1">
                   <h5 className="text-white fw-bold">Multilingual Shopping Chatbot</h5>
-                  <p className="text-highlight small mb-4 lh-base">Developed an AI-powered multilingual shopping chatbot using React, Node.js,
-and a database with real-time support and personalized recommendations. Presented at the IBM Hackathon.</p>
+                  <p className="text-highlight small mb-4 lh-base">Developed an AI-powered multilingual shopping chatbot using React, Node.js, and a database with real-time support and personalized recommendations. Presented at the IBM Hackathon.</p>
                   <div className="mt-auto d-flex gap-2">
                     <a href="#" className="btn btn-sm btn-neon"><i className="bi bi-github"></i> GitHub</a>
                     <a href="#" className="btn btn-sm btn-neon btn-neon-purple"><i className="bi bi-box-arrow-up-right"></i> Live</a>
@@ -369,8 +414,7 @@ and a database with real-time support and personalized recommendations. Presente
                 <img src={img3} alt="Graphic Design UI" className="img-fluid border-bottom border-secondary" style={{ height: '200px', objectFit: 'cover' }} />
                 <div className="p-4 d-flex flex-column flex-grow-1">
                   <h5 className="text-white fw-bold">Smart Waste Management System</h5>
-                  <p className="text-highlight small mb-4 lh-base">Built a Python-based ML system to predict waste generation, optimize
-collection routes, and monitor waste through interactive dashboards.</p>
+                  <p className="text-highlight small mb-4 lh-base">Built a Python-based ML system to predict waste generation, optimize collection routes, and monitor waste through interactive dashboards.</p>
                   <div className="mt-auto d-flex gap-2">
                     <a href="#" className="btn btn-sm btn-neon"><i className="bi bi-github"></i> GitHub</a>
                     <a href="#" className="btn btn-sm btn-neon btn-neon-purple"><i className="bi bi-box-arrow-up-right"></i> Live</a>
@@ -384,8 +428,7 @@ collection routes, and monitor waste through interactive dashboards.</p>
                 <img src={img4} alt="Data Mining Algo" className="img-fluid border-bottom border-secondary" style={{ height: '200px', objectFit: 'cover' }} />
                 <div className="p-4 d-flex flex-column flex-grow-1">
                   <h5 className="text-white fw-bold">Airline Analytical Dashboard</h5>
-                  <p className="text-highlight small mb-4 lh-base">Designed an interactive Power BI dashboard to analyze passenger trends, delays,
-revenue, and KPIs for data-driven decision-making.</p>
+                  <p className="text-highlight small mb-4 lh-base">Designed an interactive Power BI dashboard to analyze passenger trends, delays, revenue, and KPIs for data-driven decision-making.</p>
                   <div className="mt-auto d-flex gap-2">
                     <a href="#" className="btn btn-sm btn-neon"><i className="bi bi-github"></i> GitHub</a>
                     <a href="#" className="btn btn-sm btn-neon btn-neon-purple"><i className="bi bi-box-arrow-up-right"></i> Live</a>
@@ -448,7 +491,7 @@ revenue, and KPIs for data-driven decision-making.</p>
 
                 <div className="timeline-item glass-card p-4">
                   <div className="d-flex justify-content-between align-items-center mb-2">
-                    <h5 className="m-0 text-neon-green fw-bold">Data Analyst Intern</h5>
+                    <h5 className="m-0 text-danger fw-bold">Data Analyst Intern</h5>
                     <span className="badge bg-transparent border border-secondary text-highlight">2026 April - 2026 May</span>
                   </div>
                   <h6 className="text-white mb-3 fw-semibold">Edu Tantr, Bangalore</h6>
@@ -457,7 +500,7 @@ revenue, and KPIs for data-driven decision-making.</p>
 
                 <div className="timeline-item glass-card p-4">
                   <div className="d-flex justify-content-between align-items-center mb-2">
-                    <h5 className="m-0 text-neon-green fw-bold">MERN Stack Development & DevOps Engineering</h5>
+                    <h5 className="m-0 text-neon-purple fw-bold">MERN Stack Development & DevOps Engineering</h5>
                     <span className="badge bg-transparent border border-secondary text-highlight">2026 May - Present</span>
                   </div>
                   <h6 className="text-white mb-3 fw-semibold">Vinsup Skill Academy, Coimbatore</h6>
@@ -466,11 +509,20 @@ revenue, and KPIs for data-driven decision-making.</p>
 
                 <div className="timeline-item glass-card p-4">
                   <div className="d-flex justify-content-between align-items-center mb-2">
+                    <h5 className="m-0 text-neon-green fw-bold">Club Membership Chair</h5>
+                    <span className="badge bg-transparent border border-secondary text-highlight">2026 July - Present</span>
+                  </div>
+                  <h6 className="text-white mb-3 fw-semibold">Rotaract Club of Coimbatore Changemakers</h6>
+                  <p className="text-highlight small m-0 lh-lg">Currently Pursuing MERN Stack and DevOps training covering MongoDB, Express.js, React.js, Node.js, Git, Docker, and CI/CD practices.</p>
+                </div>
+
+                <div className="timeline-item glass-card p-4">
+                  <div className="d-flex justify-content-between align-items-center mb-2">
                     <h5 className="m-0 text-neon-blue fw-bold">Club Service Director</h5>
-                    <span className="badge bg-transparent border border-secondary text-highlight">Ongoing</span>
+                    <span className="badge bg-transparent border border-secondary text-highlight">2025 July - 2026 May</span>
                   </div>
                   <h6 className="text-white mb-3 fw-semibold">Rotaract Club of Srcas</h6>
-                  <p className="text-highlight small m-0 lh-lg">Actively managing data logistics, event records, and administrative rosters for over 40+ members, building foundational organizational and people skills.</p>
+                  <p className="text-highlight small m-0 lh-lg">Spearheading member recruitment, onboarding pipelines, and engagement metrics for the club, developing critical leadership and relationship-management skills.</p>
                 </div>
 
               </div>
