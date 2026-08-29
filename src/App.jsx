@@ -509,7 +509,7 @@ const App = () => {
 
                 <div className="timeline-item glass-card p-4">
                   <div className="d-flex justify-content-between align-items-center mb-2">
-                    <h5 className="m-0 text-neon-green fw-bold">Club Membership Chair</h5>
+                    <h5 className="m-0 text-neon-green fw-bold">Secretary Communication</h5>
                     <span className="badge bg-transparent border border-secondary text-highlight">2026 July - Present</span>
                   </div>
                   <h6 className="text-white mb-3 fw-semibold">Rotaract Club of Coimbatore Changemakers</h6>
