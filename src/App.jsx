@@ -24,7 +24,7 @@ const App = () => {
 
   useEffect(() => {
     // 1. Typing Animation Logic
-    const textArray = ["Tharrun S", "a Full Stack Learner"];
+    const textArray = ["Tharrun S", "a Full Stack Developer"];
     const typingDelay = 120;
     const erasingDelay = 80;
     const newTextDelay = 2000;
@@ -202,7 +202,7 @@ const App = () => {
               <h1 className="display-3 fw-bold mb-3 text-white">
                 I'm <span id="typing-text" ref={typedTextRef} className="text-neon-blue"></span><span className="typing-cursor"></span>
               </h1>
-              <h3 className="fw-light mb-4 text-highlight">MERN Stack Dev | Data Analyst</h3>
+              <h3 className="fw-light mb-4 text-highlight">MERN Stack DevOps | Data Analyst</h3>
               <p className="text-white mb-5 fs-6 lh-lg">
                 A MERN Stack Developer who blends powerful backend systems with clean, responsive user interfaces. I love exploring data, building interactive web experiences, and turning ideas into scalable digital products.
               </p>
