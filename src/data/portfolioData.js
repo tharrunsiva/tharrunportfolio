@@ -53,7 +53,7 @@ export const personalInfo = {
   resumeUrl: resumePdf,
   socialLinks: {
     github: 'https://github.com/tharrunsiva',
-    linkedin: 'https://www.linkedin.com/in/tharrun-s-3313a12b6/',
+    linkedin: 'https://www.linkedin.com/in/tharrun/',
     instagram: 'https://www.instagram.com/tharrun._.07_/?hl=en',
     whatsapp: 'https://wa.me/918220616181'
   },
