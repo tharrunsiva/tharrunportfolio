@@ -15,7 +15,7 @@ const Footer = () => {
             <h3 className="text-white fw-bold mb-1">
               Tharrun <span className="text-gradient-cyan">S.</span>
             </h3>
-            <p className="text-muted small m-0 code-font">
+            <p className="footer-tagline small m-0 code-font">
               "Design. Code. Innovate. Repeat." • Coimbatore, India
             </p>
           </div>
@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom pt-4 border-top border-secondary border-opacity-25 text-center">
-          <p className="text-muted small m-0">
+          <p className="footer-copyright small m-0">
             © {new Date().getFullYear()} <strong className="text-white">Tharrun Sivakumar</strong>. Built with React & Modern Glassmorphism.
           </p>
         </div>

@@ -64,6 +64,10 @@ p, span, div, li, label {
   color: #f8fafc;
 }
 
+.text-muted {
+  color: #cbd5e1 !important;
+}
+
 .code-font {
   font-family: 'JetBrains Mono', monospace;
 }
@@ -1015,14 +1019,25 @@ p, span, div, li, label {
    FOOTER
    ========================================================================== */
 .footer {
-  background: linear-gradient(180deg, transparent 0%, rgba(12, 16, 23, 0.95) 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(12, 16, 23, 0.98) 100%);
   border-top: 1px solid var(--glass-border);
+}
+.footer-tagline {
+  color: #e2e8f0 !important;
+  opacity: 0.95;
+}
+.footer-copyright {
+  color: #cbd5e1 !important;
+  opacity: 0.95;
+}
+.footer-copyright strong {
+  color: #ffffff !important;
 }
 .social-icon-btn {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.08);
   border: 1px solid var(--glass-border);
   color: #ffffff;
   display: inline-flex;
