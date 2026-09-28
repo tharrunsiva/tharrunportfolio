@@ -32,15 +32,16 @@ import vivitsu1 from '../assets/vivitsu1.jfif';
 import vivitsu2 from '../assets/vivitsu2.jfif';
 import vivitsu3 from '../assets/vivitsu3.jfif';
 
+import mkcePhoto from '../assets/MKCE.jpeg';
+import srcasSelection2O from '../assets/srcasselection2O.jpg';
+
 export const personalInfo = {
   name: 'Tharrun Sivakumar',
   shortName: 'Tharrun S',
   tagline: 'MERN Stack Developer • DevOps Enthusiast • Data Analyst',
   roles: [
     'Tharrun S',
-    'MERN Stack Developer',
-    'DevOps Engineer',
-    'Data Analyst'
+    'MERN Stack Developer'
   ],
   bio: `A passionate MERN Stack Developer and Data Analyst who bridges high-performance backend architecture with sleek, responsive, and intuitive digital interfaces. Experienced in crafting production-ready web apps, building predictive data pipelines, and orchestrating modern DevOps workflows with Docker and CI/CD.`,
   location: 'Coimbatore, Tamil Nadu, India',
@@ -53,7 +54,7 @@ export const personalInfo = {
   resumeUrl: resumePdf,
   socialLinks: {
     github: 'https://github.com/tharrunsiva',
-    linkedin: 'https://www.linkedin.com/in/tharrun/',
+    linkedin: 'https://www.linkedin.com/in/tharrun-s-3313a12b6/',
     instagram: 'https://www.instagram.com/tharrun._.07_/?hl=en',
     whatsapp: 'https://wa.me/918220616181'
   },
@@ -105,23 +106,23 @@ export const hackathonsData = [
     photos: [ibmSrcas1, ibmSrcas2, ibmSrcas3, ibmSrcas5, ibmSrcas6]
   },
   {
-    id: 'ibm-intercollege-srcas',
-    title: 'IBM Intercollege Hackathon',
+    id: 'ibm-selection-srcas',
+    title: 'IBM Hackathon 2.0 - Intercollege Selection',
     category: 'IBM Hackathon',
     isNational: false,
-    award: '🥇 1st Place Winner in College & Promoted to Nationals',
+    award: '🥇 1st Place Winner & IBM National Finals 2.0 Qualifier',
     awardBadgeClass: 'badge-green',
     venue: 'SRCAS, Coimbatore',
-    duration: '12 Hours',
-    projectTitle: 'Smart Voting Platform with High Privacy Settings',
-    description: 'Engineered a tamper-resistant digital voting portal with multi-factor voter authentication and encrypted ballot mechanisms. Captured 1st Place in the college and advanced to the IBM National Finals.',
+    duration: 'Selection Round',
+    projectTitle: 'AI Transportation Accident Safety System (Qualifier)',
+    description: 'Won 1st Place in the college selection sprint for IBM Hackathon 2.0, qualifying as the premier team to advance directly to the IBM National Grand Finals.',
     keyHighlights: [
-      'Won 1st Place overall in the college competition',
-      'Promoted directly to represent at the National IBM Hackathon',
-      'Cryptographically secured voting tallies with real-time audit dashboards'
+      'Captured 1st Place in the college selection competition',
+      'Official nomination and qualification for the IBM National Hackathon Finals 2.0',
+      'Demonstrated high-speed system architecture and AI modeling'
     ],
-    tech: ['Django', 'Python', 'PostgreSQL', 'Chart.js', 'Security Protocols'],
-    photos: [] // No photos for intercollege hackathon as requested
+    tech: ['Python', 'MERN Stack', 'REST APIs', 'Machine Learning'],
+    photos: [srcasSelection2O]
   },
   {
     id: 'zoho-chennai',
@@ -143,22 +144,42 @@ export const hackathonsData = [
     photos: [zoho1, zoho2, zoho3, zoho4, zoho5]
   },
   {
-    id: 'ibm-selection-srcas',
-    title: 'IBM Intercollege Hackathon Selection Test',
+    id: 'multiverse-mkce',
+    title: 'Multiverse 30-Hour Hackathon',
+    category: 'Endurance Hackathon',
+    isNational: false,
+    award: '🥉 3rd Place Winner & 30-Hour Rapid Build',
+    awardBadgeClass: 'badge-amber',
+    venue: 'MKCE, Karur',
+    duration: '30 Hours Non-Stop',
+    projectTitle: 'Metropolitan Bus Crowd Management System',
+    description: 'Won 3rd Place in the endurance 30-hour hackathon at MKCE Karur, building an IoT telemetry and real-time crowd distribution platform for metropolitan transit networks.',
+    keyHighlights: [
+      'Captured 3rd Place Winner award at the 30-Hour Multiverse Hackathon',
+      '30-hour continuous sprint developing real-time bus telemetry & predictive distribution',
+      'Engineered live route density heatmaps and commuter alert algorithms'
+    ],
+    tech: ['React.js', 'Python', 'IoT Simulation', 'Analytics'],
+    photos: [mkcePhoto]
+  },
+  {
+    id: 'ibm-intercollege-srcas',
+    title: 'IBM Intercollege Hackathon',
     category: 'IBM Hackathon',
     isNational: false,
-    award: '🥇 1st Place Winner & Direct National Qualifier',
+    award: '🥇 1st Place Winner in College & Promoted to Nationals',
     awardBadgeClass: 'badge-green',
     venue: 'SRCAS, Coimbatore',
-    duration: 'Competitive Hackathon',
-    projectTitle: 'Innovative Full-Stack AI Solution',
-    description: 'Delivered an agile software prototype during the qualifying round, clinching 1st Place and sealing the official nomination for the IBM National Hackathon.',
+    duration: '12 Hours',
+    projectTitle: 'Smart Voting Platform with High Privacy Settings',
+    description: 'Engineered a tamper-resistant digital voting portal with multi-factor voter authentication and encrypted ballot mechanisms. Captured 1st Place in the college and advanced to the IBM National Finals in Surat.',
     keyHighlights: [
-      '1st Place prize winner in the qualifying sprint',
-      'Demonstrated rapid prototyping and system architecture prowess'
+      'Won 1st Place overall in the college competition',
+      'Promoted directly to represent at the National IBM Hackathon',
+      'Cryptographically secured voting tallies with real-time audit dashboards'
     ],
-    tech: ['MERN Stack', 'REST APIs', 'Database Design'],
-    photos: [] // No photos for intercollege hackathon as requested
+    tech: ['Django', 'Python', 'PostgreSQL', 'Chart.js', 'Security Protocols'],
+    photos: [] // No photo section for this specific college round as requested
   },
   {
     id: 'vivitsu-grit',
@@ -177,24 +198,6 @@ export const hackathonsData = [
     ],
     tech: ['React.js', 'Node.js', 'MongoDB', 'Tailwind CSS'],
     photos: [vivitsu1, vivitsu2, vivitsu3]
-  },
-  {
-    id: 'multiverse-mkce',
-    title: 'Multiverse 30-Hour Hackathon',
-    category: 'Endurance Hackathon',
-    isNational: false,
-    award: '⚡ 30-Hour Rapid Build & IoT Telemetry',
-    awardBadgeClass: 'badge-amber',
-    venue: 'MKCE, Karur',
-    duration: '30 Hours Non-Stop',
-    projectTitle: 'Metropolitan Bus Crowd Management System',
-    description: 'Endurance 30-hour hackathon project building a real-time smart bus occupancy tracking and crowd optimization platform for major urban transit networks.',
-    keyHighlights: [
-      '30-hour uninterrupted software engineering sprint',
-      'Predictive route loading and passenger distribution dashboard'
-    ],
-    tech: ['React.js', 'Python', 'IoT Simulation', 'Analytics'],
-    photos: [] // No photo section for Multiverse hackathon as requested
   }
 ];
 

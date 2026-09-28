@@ -938,6 +938,16 @@ p, span, div, li, label {
   color: #ffffff;
 }
 
+.location-badge {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  color: #ffffff;
+}
+
+.timeline-meta-group {
+  align-items: center;
+}
+
 /* ==========================================================================
    CONTACT SECTION
    ========================================================================== */
@@ -1173,7 +1183,7 @@ p, span, div, li, label {
     padding: 6px 12px;
   }
 
-  /* Timeline on Mobile */
+  /* Timeline on Mobile - Clean aligned metadata */
   .custom-timeline {
     padding-left: 22px;
   }
@@ -1185,6 +1195,19 @@ p, span, div, li, label {
   }
   .timeline-content-card {
     padding: 1.25rem 1rem !important;
+  }
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 8px !important;
+  }
+  .timeline-meta-group {
+    width: 100%;
+    justify-content: flex-start !important;
+    gap: 8px !important;
+  }
+  .period-badge, .location-badge {
+    font-size: 0.75rem !important;
   }
 
   /* Projects & Hackathons on mobile */

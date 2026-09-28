@@ -58,29 +58,29 @@ const Timeline = () => {
                   </div>
 
                   <div className="glass-card timeline-content-card p-4">
-                    {/* Header Row */}
-                    <div className="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
-                      <div>
-                        <h5 className="text-white fw-bold mb-1 d-flex align-items-center gap-2">
+                    {/* Header Row - Fully Responsive & Aligned */}
+                    <div className="timeline-header d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3">
+                      <div className="timeline-title-group">
+                        <h5 className="text-white fw-bold mb-1 d-flex flex-wrap align-items-center gap-2">
                           <span>{item.title}</span>
                           {item.period.includes('Present') && (
                             <span className="badge-active-pulse">Active</span>
                           )}
                         </h5>
-                        <h6 className="text-neon-blue fw-bold small mb-1">
-                          <i className="bi bi-building me-1"></i>
-                          {item.organization}
+                        <h6 className="text-neon-blue fw-bold small mb-1 d-inline-flex align-items-center gap-1">
+                          <i className="bi bi-building"></i>
+                          <span>{item.organization}</span>
                         </h6>
                       </div>
 
-                      <div className="d-flex flex-column align-items-end">
-                        <span className="period-badge px-3 py-1 rounded-pill small fw-bold text-white">
-                          <i className="bi bi-calendar3 me-1 text-neon-green"></i>
-                          {item.period}
+                      <div className="timeline-meta-group d-flex flex-wrap align-items-center gap-2">
+                        <span className="period-badge px-3 py-1 rounded-pill small fw-bold text-white d-inline-flex align-items-center gap-1">
+                          <i className="bi bi-calendar3 text-neon-green"></i>
+                          <span>{item.period}</span>
                         </span>
-                        <span className="text-white small mt-1 opacity-90">
-                          <i className="bi bi-geo-alt me-1 text-danger"></i>
-                          {item.location}
+                        <span className="location-badge px-3 py-1 rounded-pill small text-white opacity-95 d-inline-flex align-items-center gap-1">
+                          <i className="bi bi-geo-alt-fill text-danger"></i>
+                          <span>{item.location}</span>
                         </span>
                       </div>
                     </div>
