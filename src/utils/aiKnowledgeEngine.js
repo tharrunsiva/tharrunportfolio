@@ -90,7 +90,7 @@ export const processUserQuery = (userQuery) => {
 
   if (!rawQuery || rawQuery.length < 1) {
     return {
-      answer: `Hello! I am **Tharrun's AI Robot Assistant** 🤖. Ask me anything about his **Education (SRCAS)**, **Date of Birth & Family**, **Hackathon Wins (IBM, Zoho, MKCE)**, **Projects**, **Skills**, or **Contact Details**!`,
+      answer: `Hello! I am **THAR-X** (Tharrun's AI Companion) 🤖. Ask me anything about his **Education (SRCAS)**, **Date of Birth & Family**, **Hackathon Wins (IBM, Zoho, MKCE)**, **Projects**, **Skills**, or **Contact Details**!`,
       suggestions: ['🏆 Hackathons', '🎓 Education', '💻 Projects', '🎂 Date of Birth']
     };
   }
@@ -205,7 +205,7 @@ export const processUserQuery = (userQuery) => {
     tokens.length <= 4
   ) {
     return {
-      answer: `Hey there! 👋 I am **Tharrun's AI Dancing Robot Assistant** 🤖. How can I help you today? Ask me anything about his **Hackathons**, **Projects**, **Skills**, **College**, or **Personal Details**!`,
+      answer: `Hey there! 👋 I am **THAR-X** (Tharrun's AI Dancing Companion) 🤖. How can I help you today? Ask me anything about his **Hackathons**, **Projects**, **Skills**, **College**, or **Personal Details**!`,
       actions: [
         { label: '🏆 View Hackathons', type: 'scroll', value: '#hackathons', icon: 'bi-trophy-fill' },
         { label: '💻 View Projects', type: 'scroll', value: '#projects', icon: 'bi-grid-fill' }

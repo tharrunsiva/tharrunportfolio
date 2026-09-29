@@ -2,14 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { processUserQuery, defaultQuickPrompts } from '../utils/aiKnowledgeEngine';
 import { personalInfo } from '../data/portfolioData';
 
-const greetingsList = [
-  "👋 Hey! I'm Tharrun's AI Assistant!",
-  "🏆 Ask me about my 7+ Hackathon Wins!",
-  "🎓 Ask where I studied & my B.Sc Degree!",
-  "👨 Ask about my Father's Name & Family!",
-  "💻 Ask about my Production Projects & MERN Stack!",
-  "📄 Ask to download my verified Resume!"
-];
+const speechGreetingText = "👋 Hey! I'm THAR-X, Tharrun's AI";
 
 const topicCategories = [
   { id: 'all', label: '⚡ All Topics', icon: 'bi-grid-fill' },
@@ -66,7 +59,7 @@ const capabilityCards = [
 
 const RobotAssistant = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [greetingIndex, setGreetingIndex] = useState(0);
+  const [showSpeechBanner, setShowSpeechBanner] = useState(true);
   const [inputValue, setInputValue] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const [showCapabilityDeck, setShowCapabilityDeck] = useState(true);
@@ -81,7 +74,7 @@ const RobotAssistant = () => {
     {
       id: 1,
       sender: 'bot',
-      text: `Hello! I am **Tharrun's Neural AI Assistant v2.5 PRO** 🤖.\n\nI have complete, instant intelligence on:\n• 👨 **Father's Name:** Sivakumar\n• 🎂 **Date of Birth:** 01 October 2006 (19 Yrs)\n• 🎓 **Education:** B.Sc Computer Science @ SRCAS Coimbatore\n• 🏆 **National Hackathons:** 7+ Wins (IBM Surat 4th Place, MKCE 3rd, Zoho Finalist)\n• 💻 **Production Projects:** Vinsup CRM, Revivo, Venture Match\n• 📄 **Verified Resume & Contact**\n\nHow can I assist your exploration today?`,
+      text: `Hello! I am **THAR-X** (Tharrun's Neural AI Companion v2.5 PRO) 🤖.\n\nI have complete, instant intelligence on:\n• 👨 **Father's Name:** Sivakumar\n• 🎂 **Date of Birth:** 01 October 2006 (19 Yrs)\n• 🎓 **Education:** B.Sc Computer Science @ SRCAS Coimbatore\n• 🏆 **National Hackathons:** 7+ Wins (IBM Surat 4th Place, MKCE 3rd, Zoho Finalist)\n• 💻 **Production Projects:** Vinsup CRM, Revivo, Venture Match\n• 📄 **Verified Resume & Contact**\n\nHow can I assist your exploration today?`,
       time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       suggestions: ['👨 Father\'s Name', '🎂 Date of Birth', '🎓 Education & College', '🏆 Top Hackathon Wins', '💻 Featured Projects', '📞 Contact & WhatsApp']
     }
@@ -91,12 +84,12 @@ const RobotAssistant = () => {
   const inputRef = useRef(null);
   const recognitionRef = useRef(null);
 
-  // Cycle through greetings above the robot mascot every 4.2s
+  // Display speech bubble once for 5.5s on page load, then permanently hide until page refresh
   useEffect(() => {
-    const interval = setInterval(() => {
-      setGreetingIndex((prev) => (prev + 1) % greetingsList.length);
-    }, 4200);
-    return () => clearInterval(interval);
+    const timer = setTimeout(() => {
+      setShowSpeechBanner(false);
+    }, 5500);
+    return () => clearTimeout(timer);
   }, []);
 
   // Auto scroll to bottom
@@ -189,6 +182,7 @@ const RobotAssistant = () => {
 
   const handleToggleChat = () => {
     setIsOpen(!isOpen);
+    setShowSpeechBanner(false);
     if (!isOpen && window.speechSynthesis) {
       window.speechSynthesis.cancel();
       setIsVoiceSpeaking(false);
@@ -308,13 +302,20 @@ const RobotAssistant = () => {
       {/* Floating Full Body Dancing Robot Mascot Trigger */}
       <div className={`robot-mascot-container ${isOpen ? 'active-open' : ''}`}>
         
-        {/* Dynamic Animated Speech Banner ("Hey I'm AI...") */}
-        {!isOpen && (
-          <div className="robot-speech-banner" onClick={handleToggleChat}>
+        {/* Dynamic Speech Banner - Displays once on load and auto-hides */}
+        {!isOpen && showSpeechBanner && (
+          <div 
+            className="robot-speech-banner" 
+            onClick={() => {
+              setShowSpeechBanner(false);
+              setIsOpen(true);
+            }}
+            title="Click to chat with AI Assistant"
+          >
             <div className="d-flex align-items-center gap-2">
               <span className="speech-pulse-dot"></span>
-              <span className="speech-text key-fade" key={greetingIndex}>
-                {greetingsList[greetingIndex]}
+              <span className="speech-text">
+                {speechGreetingText}
               </span>
             </div>
             <div className="speech-banner-arrow"></div>
@@ -432,7 +433,7 @@ const RobotAssistant = () => {
             {/* AI Floating Status Pill */}
             <div className="robot-mascot-status-pill">
               <span className="pulse-dot-sm me-1"></span>
-              <span>AI COMPANION</span>
+              <span>THAR-X 🤖</span>
             </div>
 
           </div>
@@ -467,7 +468,7 @@ const RobotAssistant = () => {
             </div>
             <div>
               <div className="d-flex align-items-center gap-2 flex-wrap">
-                <h6 className="cyber-brand-title text-white fw-bold m-0 fs-6">TharrunBot AI</h6>
+                <h6 className="cyber-brand-title text-white fw-bold m-0 fs-6">THAR-X AI</h6>
                 <span className="badge-neural-ai">
                   <i className="bi bi-cpu-fill me-1 text-neon-cyan"></i>
                   v2.5 PRO
@@ -612,7 +613,7 @@ const RobotAssistant = () => {
                       <div className="d-flex align-items-center gap-1">
                         <span className="bot-core-tag code-font">
                           <i className="bi bi-shield-check me-1 text-neon-green"></i>
-                          THARRUN AI CORE
+                          THAR-X CORE
                         </span>
                         <span className="bot-badge-model code-font">v2.5</span>
                       </div>
