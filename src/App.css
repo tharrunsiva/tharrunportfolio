@@ -453,10 +453,19 @@ p, span, div, li, label {
   transition: all 0.3s ease;
 }
 
-.badge-react { top: 30px; right: -20px; animation: floatBadge 4s ease-in-out infinite; }
-.badge-node { bottom: 60px; left: -25px; animation: floatBadge 4.5s ease-in-out infinite 0.5s; }
-.badge-python { top: 40px; left: -20px; animation: floatBadge 5s ease-in-out infinite 1s; }
-.badge-devops { bottom: 40px; right: -20px; animation: floatBadge 4.2s ease-in-out infinite 1.5s; }
+.badge-react { top: 25px; right: -20px; animation: floatBadge 4s ease-in-out infinite; }
+.badge-python { top: 35px; left: -20px; animation: floatBadge 5s ease-in-out infinite 1s; }
+.badge-node { bottom: 140px; left: -25px; animation: floatBadge 4.5s ease-in-out infinite 0.5s; }
+.badge-devops { bottom: 120px; right: -20px; animation: floatBadge 4.2s ease-in-out infinite 1.5s; }
+
+.avatar-caption-card {
+  position: relative;
+  z-index: 15;
+  background: rgba(10, 16, 30, 0.94);
+  border: 1px solid rgba(0, 255, 136, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7), 0 0 15px rgba(0, 255, 136, 0.15);
+  border-radius: 30px;
+}
 
 @keyframes floatBadge {
   0%, 100% { transform: translateY(0); }
@@ -663,18 +672,35 @@ p, span, div, li, label {
 .modal-backdrop-custom {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.88);
-  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   z-index: 2000;
   animation: fadeIn 0.3s ease;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
 }
 .modal-dialog-custom {
   max-width: 850px;
   width: 100%;
   max-height: 90vh;
-  overflow-y: auto;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch;
   border-radius: 20px;
+  margin: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 229, 255, 0.4) transparent;
+}
+.modal-dialog-custom::-webkit-scrollbar {
+  width: 6px;
+}
+.modal-dialog-custom::-webkit-scrollbar-thumb {
+  background: rgba(0, 229, 255, 0.4);
+  border-radius: 10px;
 }
 .btn-modal-close {
   position: absolute;
@@ -2087,9 +2113,9 @@ p, span, div, li, label {
     padding: 4px 10px;
   }
   .badge-react { top: 15px; right: -10px; }
-  .badge-node { bottom: 40px; left: -15px; }
-  .badge-python { top: 25px; left: -10px; }
-  .badge-devops { bottom: 25px; right: -10px; }
+  .badge-python { top: 20px; left: -10px; }
+  .badge-node { bottom: 105px; left: -15px; }
+  .badge-devops { bottom: 90px; right: -10px; }
 
   .stat-card {
     padding: 0.5rem !important;
@@ -2158,9 +2184,18 @@ p, span, div, li, label {
   }
 
   /* Modal on Mobile */
+  .modal-backdrop-custom {
+    padding: 0.75rem 0.5rem !important;
+    align-items: flex-start !important;
+  }
   .modal-dialog-custom {
-    padding: 1.25rem !important;
-    max-width: 95vw;
+    padding: 1.25rem 1rem !important;
+    max-width: 100% !important;
+    max-height: 88vh !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    margin: 0.5rem auto !important;
+    border-radius: 16px;
   }
   .btn-modal-close {
     top: 10px;

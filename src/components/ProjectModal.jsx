@@ -12,9 +12,9 @@ const ProjectModal = ({ project, onClose }) => {
   if (!project) return null;
 
   return (
-    <div className="modal-backdrop-custom d-flex align-items-center justify-content-center p-3" onClick={onClose}>
+    <div className="modal-backdrop-custom" onClick={onClose}>
       <div 
-        className="glass-card modal-dialog-custom p-4 p-md-5 position-relative overflow-hidden" 
+        className="glass-card modal-dialog-custom p-3 p-sm-4 p-md-5 position-relative" 
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
