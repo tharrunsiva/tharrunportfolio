@@ -11,6 +11,7 @@ import Timeline from './components/Timeline';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Toast from './components/Toast';
+import RobotAssistant from './components/RobotAssistant';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -73,6 +74,9 @@ const App = () => {
         <Timeline />
         <Contact onShowToast={showToast} />
       </main>
+
+      {/* Interactive AI Robot Assistant */}
+      <RobotAssistant />
 
       {/* Footer */}
       <Footer />
